@@ -9,7 +9,7 @@ void main() async {
   final appDocumentDirectory =
       await path_provider.getApplicationDocumentsDirectory();
   Hive.init(appDocumentDirectory.path);
-  Hive.registerAdapter(ContactAdapter(), 0);
+  // Hive.registerAdapter(ContactAdapter(), 0);
   runApp(MyApp());
 }
 
